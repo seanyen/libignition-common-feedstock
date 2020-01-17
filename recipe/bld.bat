@@ -23,5 +23,5 @@ cmake --build . --config Release --target install
 if errorlevel 1 exit 1
 
 :: Test.
-ctest -C Release -E "INTEGRATION|PERFORMANCE|REGRESSION|UNIT_Filesystem_TEST" -VV
+ctest -C Release -E "INTEGRATION|PERFORMANCE|REGRESSION|UNIT_Filesystem_TEST|UNIT_WorkerPool_TEST" -VV
 if errorlevel 1 exit 1
